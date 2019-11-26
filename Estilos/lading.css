@@ -1,0 +1,216 @@
+.container{
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-around;
+}
+.container img{
+    display: block;
+    height: 450px;
+    object-fit: cover;
+    width: auto;
+    animation: moverArriba 1s ease-in;
+}
+
+.textos{
+    width: 50%;
+    color: #fff;
+}
+
+.textos h1{
+    font-size: 80px;
+    animation: moverDerecha 1s ease-in;
+
+}
+.textos h3{
+    font-size: 80px;
+    animation: moverDerecha 1s ease-in;
+
+}
+
+
+.textos h2{
+    font-size: 30px;
+    animation: moverIzquierda 1s ease-in;
+
+}
+
+.textos a{
+    display: inline-block;
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-top: 30px;
+    border: 1px solid #fff;
+    width: 150px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 0;
+    animation: moverArriba 1s ease-in;
+
+}
+
+.wave{
+    height: 100%;
+    width: 100%;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@keyframes moverIzquierda{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+    
+}
+
+@keyframes moverDerecha{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+    
+}
+
+@keyframes moverArriba{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+    
+}
+
+@media screen and (max-width: 1000px){
+    .container img{
+        height: 400px;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    .container img{
+        height: 370px;
+    }
+    
+    .textos h1{
+        font-size: 70px;
+    }
+    
+    .textos h2{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .container img{
+        height: 250px;
+    }
+    
+    .textos h1{
+        font-size: 40px;
+    }
+    
+    .textos h2{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .container{
+        width: 100%;
+        flex-wrap: wrap; /*-reverse para que la imagen se vea arriba*/
+        justify-content: center;
+    }
+    .container img{
+        height: 370px;
+    }
+    .textos{
+        width: 100%;
+        text-align: center;
+    }
+    .textos h1{
+        font-size: 25px;
+    }
+    
+    .textos h2{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .container img{
+        height: 155px;
+    }
+    .logo img{
+        height: 50px;
+    }
+    
+    .textos h1{
+        font-size: 25px;
+    }
+    .textos{
+        width: 100%;
+        text-align: center;
+    }
+    .textos a{
+        width: 100px;
+    }
+    
+    .textos h2{
+        font-size: 17px;
+    }
+     .textos h3{
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 480px) and (orientation: landscape) {
+    .container img{
+        height: 100px;
+         flex-wrap: wrap;
+    }
+    
+    .textos h1{
+        font-size: 20px;
+    }
+    .textos{
+        width: 100%;
+        text-align: center;
+    }
+    .textos a{
+        width: 100px;
+    }
+    
+    .textos h2{
+        font-size: 15px;
+    }
+     .textos h3{
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
