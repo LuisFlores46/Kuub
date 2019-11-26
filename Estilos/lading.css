@@ -55,9 +55,10 @@
 .wave{
     height: 100%;
     width: 100%;
-    background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #E6DADA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #274046, #E6DADA);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #274046, #E6DADA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 @keyframes moverIzquierda{
@@ -160,8 +161,10 @@
     .container img{
         height: 155px;
     }
-    .logo img{
-        height: 50px;
+   nav .logo img {
+        height: 36px;
+        margin-top: 15px;
+       
     }
     
     .textos h1{
@@ -185,7 +188,6 @@
 @media screen and (max-width: 480px) and (orientation: landscape) {
     .container img{
         height: 100px;
-         flex-wrap: wrap;
     }
     
     .textos h1{
